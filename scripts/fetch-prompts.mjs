@@ -61,7 +61,7 @@ async function fetchEN() {
 }
 
 async function main() {
-  Promise.all([fetchCN(), fetchEN()])
+  Promise.all([fetchEN()])
     .then(([cn, en]) => {
       fs.writeFile(FILE, JSON.stringify({ cn, en }));
     })
