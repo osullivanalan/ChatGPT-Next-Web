@@ -178,15 +178,6 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "gpt-4-turbo-2024-04-09",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
     name: "gpt-4-turbo-preview",
     available: true,
     provider: {
@@ -241,6 +232,7 @@ export const DEFAULT_MODELS = [
       providerType: "google",
     },
   },
+  /*,
   {
     name: "claude-instant-1.2",
     available: true,
@@ -294,7 +286,7 @@ export const DEFAULT_MODELS = [
       providerName: "Anthropic",
       providerType: "anthropic",
     },
-  },
+  },*/
 ] as const;
 
 export const CHAT_PAGE_SIZE = 15;
